@@ -1,7 +1,54 @@
-﻿<%@ Page Title="Terms of Services - DigiTrick Consultancy" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="TermsofServices.aspx.cs" Inherits="TermsofServices" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <style>
+  <!-- Title Tag -->
+  <title>Digitrick Consultancy | IT Training, Internship & Software Development</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Digitrick Consultancy offers IT Training, Internships, Software Development, Website Design, and Digital Marketing solutions to help students and businesses grow." />
+  <meta name="keywords" content="Digitrick Consultancy, IT Training, Internship, Software Development, Digital Marketing, Website Development, Lucknow" />
+  <meta name="author" content="Digitrick Consultancy" />
+
+  <!-- Open Graph (Facebook/LinkedIn SEO) -->
+  <meta property="og:title" content="Digitrick Consultancy - IT Training & Software Development" />
+  <meta property="og:description" content="We provide training, internships, website development, and digital marketing services." />
+  <meta property="og:image" content="https://digitrick.com/assets/img/logo.png" />
+  <meta property="og:url" content="https://digitrick.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digitrick Consultancy - Training & Development" />
+  <meta name="twitter:description" content="Digitrick Consultancy provides IT Training, Software Development & Digital Marketing solutions." />
+  <meta name="twitter:image" content="https://digitrick.com/assets/img/logo.png" />
+
+  <!-- Favicons -->
+ <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="assets/img/site.webmanifest">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet"> 
+<style>
         .terms-wrapper {
             background-color: #f9f9f9;
             border-radius: 12px;
@@ -39,9 +86,38 @@
             color: #6c757d;
         }
     </style>
-</asp:Content>
+</head>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+   <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+<a href="index.html" class="logo d-flex align-items-center me-auto">
+  <!-- Logo Text -->
+  <div class="logo-text">
+    <h1 class="sitename" style="margin:0; font-size:24px; font-weight:800; color:#000;">
+      Digi<span style="color:#dc3545;">Trick</span>
+    </h1>
+    <small style="font-size:13px; color:#6c757d;">Consultancy Services</small>
+  </div>
+</a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <!-- <li><a href="index.html#portfolio">Portfolio</a></li> -->
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    
+
+    </div>
+  </header>
     <div class="container my-5">
         <div class="terms-wrapper">
             <h1>Terms and Conditions</h1>
@@ -129,7 +205,6 @@
             <p class="terms-footer">By using our services, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.</p>
         </div>
     </div>
-</asp:Content>
 
-<asp:Content ID="Content3" ContentPlaceHolderID="ScriptHolder" Runat="Server">
-</asp:Content>
+</body>
+</html>
