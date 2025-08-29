@@ -95,83 +95,46 @@
 
 <main class="main">
 
-
   <!-- Service Details Section -->
-  <section id="service-details" class="service-details section">
+  <section id="service-details" class="service-details section py-5">
     <div class="container">
-      <div class="row gy-5">
-
-        <!-- Sidebar -->
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-       <div class="service-box">
-  <h4>Services List</h4>
-  <div class="services-list">
-    <a href="#" class="service-link active" data-service="web-design">
-      <i class="bi bi-arrow-right-circle"></i><span>Web Design</span>
-    </a>
-    <a href="#" class="service-link" data-service="web-development">
-      <i class="bi bi-arrow-right-circle"></i><span>Web Development</span>
-    </a>
-    <a href="#" class="service-link" data-service="java-development">
-      <i class="bi bi-arrow-right-circle"></i><span>Java Development</span>
-    </a>
-    <a href="#" class="service-link" data-service="python-development">
-      <i class="bi bi-arrow-right-circle"></i><span>Python Development</span>
-    </a>
-   
-    <a href="#" class="service-link" data-service="digital-marketing">
-      <i class="bi bi-arrow-right-circle"></i><span>Digital Marketing</span>
-    </a>
-    <a href="#" class="service-link" data-service="cloud-solutions">
-      <i class="bi bi-arrow-right-circle"></i><span>Cloud Solutions</span>
-    </a>
-    <a href="#" class="service-link" data-service="qa-testing">
-      <i class="bi bi-arrow-right-circle"></i><span>QA & Testing</span>
-    </a>
-    <a href="#" class="service-link" data-service="it-consulting">
-      <i class="bi bi-arrow-right-circle"></i><span>IT Consulting</span>
-    </a>
-    <a href="#" class="service-link" data-service="support-maintenance">
-      <i class="bi bi-arrow-right-circle"></i><span>Support & Maintenance</span>
-    </a>
-  </div>
-</div>
-
-
-        
-
-          <div class="help-box d-flex flex-column justify-content-center align-items-center text-center">
-            <i class="bi bi-headset help-icon"></i>
-            <h4>Need Assistance?</h4>
-        
-            <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:support@digitrick.com">support@digitrick.com</a></p>
-          </div>
-
-        </div>
-        <!-- End Sidebar -->
+      <div class="row gy-4 justify-content-center">
 
         <!-- Main Content -->
-     <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-  <img id="service-img" src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-  <h3 id="service-title">Web Design</h3>
-  <p id="service-desc">
-    We provide modern and responsive web design solutions that deliver a seamless user experience and a professional look for your business.
-  </p>
-  <ul id="service-features">
-    <li><i class="bi bi-check-circle"></i> <span>Responsive and mobile-friendly design.</span></li>
-    <li><i class="bi bi-check-circle"></i> <span>Creative and user-focused layouts.</span></li>
-    <li><i class="bi bi-check-circle"></i> <span>Optimized for performance and SEO.</span></li>
-  </ul>
-</div>
-
+        <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-delay="200">
+          <img id="service-img" src="assets/img/services.jpg" alt="Web Design Service"
+               class="img-fluid services-img rounded shadow-sm mb-4 w-100">
+          
+          <h3 id="service-title" class="fw-bold mb-3">Web Design</h3>
+          <p id="service-desc" class="text-muted">
+            We provide modern and responsive web design solutions that deliver a seamless user experience 
+            and a professional look for your business.
+          </p>
+          
+          <ul id="service-features" class="list-unstyled">
+            <li class="mb-2 d-flex align-items-start">
+              <i class="bi bi-check-circle text-success me-2 mt-1"></i> 
+              <span>Responsive and mobile-friendly design.</span>
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+              <i class="bi bi-check-circle text-success me-2 mt-1"></i> 
+              <span>Creative and user-focused layouts.</span>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-circle text-success me-2 mt-1"></i> 
+              <span>Optimized for performance and SEO.</span>
+            </li>
+          </ul>
+        </div>
         <!-- End Main Content -->
 
       </div>
     </div>
-  </section><!-- /Service Details Section -->
+  </section>
+  <!-- /Service Details Section -->
 
 </main>
+
 
 
   <footer id="footer" class="footer dark-background">
@@ -213,14 +176,12 @@
       <div class="col-lg-3 col-md-4 footer-links">
         <h4>Our Services</h4>
         <ul>
-          <li><a href="service-details.html">Web Development</a></li>
-          <li><a href="service-details.html">Java Development</a></li>
-          <li><a href="service-details.html">Python Development</a></li>
-          <li><a href="service-details.html">Digital Marketing</a></li>
-          <li><a href="service-details.html">Cloud Solutions</a></li>
-          <li><a href="service-details.html">QA & Testing</a></li>
-          <li><a href="service-details.html">IT Consulting</a></li>
-          <li><a href="service-details.html">Support & Maintenance</a></li>
+          <li><a href="service-details.html?service=web">Web Development</a></li>
+          <li><a href="service-details.html?service=marketing">Digital Marketing</a></li>
+          <li><a href="service-details.html?service=cloud">Cloud Solutions</a></li>
+          <li><a href="service-details.html?service=qa">QA & Testing</a></li>
+          <li><a href="service-details.html?service=consulting">IT Consulting</a></li>
+          <li><a href="service-details.html?service=support">Support & Maintenance</a></li>
         </ul>
       </div>
 
@@ -268,138 +229,93 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 <script>
-  const servicesContent = {
-    "web-design": {
-      title: "Web Design",
-      img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-      desc: "We create visually appealing, user-friendly, and responsive designs that align with your brand and business objectives.",
-      features: [
-        "Responsive and mobile-friendly layouts.",
-        "Pixel-perfect UI/UX design.",
-        "Optimized for accessibility and SEO.",
-        "Creative branding elements."
-      ]
-    },
-    "web-development": {
+  // Define services data
+  const services = {
+    web: {
       title: "Web Development",
-      img: "https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      desc: "Our web development services ensure scalable, high-performance websites and web apps tailored to your needs.",
+      img: "https://tse2.mm.bing.net/th/id/OIP.PtRwHX-XhuoMfTxlIVDjEwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+      desc: "We design and build responsive, SEO-friendly, and secure websites tailored to your brand and business goals.",
       features: [
-        "Custom website and application development.",
-        "Integration with APIs and databases.",
-        "High-performance and secure solutions.",
-        "Ongoing support and maintenance."
+        "Responsive and mobile-friendly design",
+        "Custom solutions for businesses",
+        "Optimized for SEO and performance"
       ]
     },
-    "java-development": {
-      title: "Java Development",
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-      desc: "We build enterprise-level Java applications that are secure, scalable, and optimized for business-critical operations.",
-      features: [
-        "Spring Boot & Microservices expertise.",
-        "Enterprise-grade backend development.",
-        "Robust APIs and services.",
-        "Cross-platform deployment."
-      ]
-    },
-    "python-development": {
-      title: "Python Development",
-      img: "https://images.unsplash.com/photo-1573496528681-9b0f4fb0c660?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      desc: "Our Python expertise enables powerful AI/ML solutions, automation, and scalable backend systems.",
-      features: [
-        "Django & Flask web frameworks.",
-        "AI, ML & Data Science solutions.",
-        "Automation scripts & tools.",
-        "Fast and secure backend APIs."
-      ]
-    },
-    "digital-marketing": {
+    marketing: {
       title: "Digital Marketing",
-      img: "https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=1200&q=80",
-      desc: "We help businesses grow online with proven digital marketing strategies designed to increase visibility and sales.",
+      img: "https://c8.alamy.com/comp/FWENFT/illustration-graphic-vector-digital-marketing-for-different-purpose-FWENFT.jpg",
+      desc: "Boost your online presence with SEO, Google Ads, Social Media Marketing, and result-driven campaigns.",
       features: [
-        "SEO & keyword optimization.",
-        "Social media campaigns.",
-        "Content marketing.",
-        "Google Ads & paid promotions."
+        "Search Engine Optimization (SEO)",
+        "Google & Facebook Ads Management",
+        "Social Media Growth Strategies"
       ]
     },
-    "cloud-solutions": {
-      title: "Cloud Solutions",
-      img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-      desc: "Empower your business with secure and cost-effective cloud infrastructure on AWS, Azure, or Google Cloud.",
+    cloud: {
+      title: "Cloud-Based Solutions",
+      img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_540,q_100,w_1080/v1/gcs/platform-data-startupgrind/blog/Cloud-Computing_VYu9lq9.png",
+      desc: "Secure, scalable, and cost-effective cloud computing services including AWS, Azure, and Google Cloud deployments.",
       features: [
-        "Cloud migration & setup.",
-        "Serverless architecture.",
-        "DevOps & automation pipelines.",
-        "Scalable and secure infrastructure."
+        "AWS, Azure & GCP setups",
+        "Scalable & cost-effective deployments",
+        "Cloud security & monitoring"
       ]
     },
-    "qa-testing": {
+    qa: {
       title: "QA & Testing",
-      img: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
-      desc: "We ensure your product’s reliability, performance, and quality through extensive testing services.",
+      img: "https://www.testingmind.com/wp-content/uploads/2022/11/623b0aa81f62670d19d49d2f_What-are-the-11-ways-your-company-can-do-software-testing-more-efficiently_-2-100-1-1200x676.jpg",
+      desc: "Comprehensive software testing services to ensure high quality, performance, and bug-free applications.",
       features: [
-        "Automated & manual testing.",
-        "Performance & security testing.",
-        "Bug detection & reporting.",
-        "Cross-platform & device compatibility checks."
+        "Manual & automated testing",
+        "Performance & load testing",
+        "Bug tracking & reporting"
       ]
     },
-    "it-consulting": {
+    training: {
+      title: "IT Training & Internship",
+      img: "https://tse2.mm.bing.net/th/id/OIP.bdC4sawnGJnE8bGhhVOmZAHaE-?rs=1&pid=ImgDetMain&o=7&rm=3",
+      desc: "Hands-on training and internship programs in trending technologies like .NET, Java, Python, Cloud, and more.",
+      features: [
+        "Live project-based training",
+        ".NET, Java, Python, Cloud, AI",
+        "Internship opportunities with certificates"
+      ]
+    },
+    consulting: {
       title: "IT Consulting",
-      img: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1200&q=80",
-      desc: "We provide expert IT consulting to help businesses align technology with growth strategies.",
+      img: "https://bitsbusinessit.com/wp-content/uploads/2017/08/IT-Consulting.jpg",
+      desc: "Expert IT consulting to help startups and companies choose the right technology for growth and digital transformation.",
       features: [
-        "Technology roadmap planning.",
-        "Business process optimization.",
-        "IT infrastructure consulting.",
-        "Cost-effective digital transformation."
-      ]
-    },
-    "support-maintenance": {
-      title: "Support & Maintenance",
-      img: "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80",
-      desc: "Keep your systems and applications running smoothly with our proactive support and maintenance services.",
-      features: [
-        "24/7 technical support.",
-        "System monitoring & updates.",
-        "Bug fixing & performance tuning.",
-        "Regular security patches."
+        "Technology strategy planning",
+        "Digital transformation consulting",
+        "Startup & enterprise IT solutions"
       ]
     }
   };
 
-  const links = document.querySelectorAll(".service-link");
-  const title = document.getElementById("service-title");
-  const desc = document.getElementById("service-desc");
-  const img = document.getElementById("service-img");
-  const featuresList = document.getElementById("service-features");
+  // Get service from URL
+  const params = new URLSearchParams(window.location.search);
+  const serviceKey = params.get("service") || "web"; // default to web
 
-  links.forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
+  // Update content
+  if (services[serviceKey]) {
+    document.getElementById("service-title").textContent = services[serviceKey].title;
+    document.getElementById("service-desc").textContent = services[serviceKey].desc;
+    document.getElementById("service-img").src = services[serviceKey].img;
 
-      // Active state
-      links.forEach(l => l.classList.remove("active"));
-      this.classList.add("active");
-
-      const serviceKey = this.getAttribute("data-service");
-      const service = servicesContent[serviceKey];
-
-      if (service) {
-        title.textContent = service.title;
-        desc.textContent = service.desc;
-        img.src = service.img;
-
-        // Update features
-        featuresList.innerHTML = service.features
-          .map(f => `<li><i class="bi bi-check-circle"></i> <span>${f}</span></li>`)
-          .join("");
-      }
+    // Update features
+    const featureList = document.getElementById("service-features");
+    featureList.innerHTML = "";
+    services[serviceKey].features.forEach(f => {
+      featureList.innerHTML += `
+        <li class="mb-2 d-flex align-items-start">
+          <i class="bi bi-check-circle text-success me-2 mt-1"></i> 
+          <span>${f}</span>
+        </li>`;
     });
-  });
+  }
 </script>
+
 
 
 

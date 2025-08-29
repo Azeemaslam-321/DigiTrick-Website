@@ -70,38 +70,34 @@
 
 <body class="index-page">
 
- <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-<a href="index.html" class="logo d-flex align-items-center me-auto">
-  <!-- Logo Text -->
-  <div class="logo-text">
-    <h1 class="sitename" style="margin:0; font-size:24px; font-weight:800; color:#000;">
-      Digi<span style="color:#dc3545;">Trick</span>
-    </h1>
-    <small style="font-size:13px; color:#6c757d;">Consultancy Services</small>
+    <!-- Logo -->
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <div class="logo-text">
+        <h1 class="sitename" style="margin:0; font-size:24px; font-weight:800; color:#000;">
+          Digi<span style="color:#dc3545;">Trick</span>
+        </h1>
+        <small style="font-size:13px; color:#6c757d;">Consultancy Services</small>
+      </div>
+    </a>
+
+    <!-- Navigation Menu -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+       
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
   </div>
-</a>
+</header>
 
-
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-     
-            <ul>
-           
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-
-    </div>
-  </header>
   
 
   <main class="main">
@@ -408,43 +404,20 @@
                 <div class="service-item d-flex position-relative h-100">
                     <i class="bi bi-laptop icon flex-shrink-0"></i>
                     <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
+                        <h4 class="title"><a href="service-details.html?service=web" class="stretched-link">Web Development</a></h4>
                         <p class="description">We design and build responsive, SEO-friendly, and secure websites tailored to your brand and business goals.</p>
                     </div>
                 </div>
             </div>
             <!-- End Service Item -->
 
-            <!-- Java Development -->
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item d-flex position-relative h-100">
-                    <i class="bi bi-code-slash icon flex-shrink-0"></i>
-                    <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">Java Development</a></h4>
-                        <p class="description">Robust enterprise applications using Java technologies, ensuring performance, scalability, and reliability.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Service Item -->
-
-            <!-- Python Solutions -->
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item d-flex position-relative h-100">
-                    <i class="bi bi-terminal icon flex-shrink-0"></i>
-                    <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">Python Solutions</a></h4>
-                        <p class="description">Custom Python development for automation, AI/ML models, web apps, and business solutions.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Service Item -->
 
             <!-- Digital Marketing -->
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-item d-flex position-relative h-100">
                     <i class="bi bi-bar-chart-line icon flex-shrink-0"></i>
                     <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">Digital Marketing</a></h4>
+                        <h4 class="title"><a href="service-details.html?service=marketing" class="stretched-link">Digital Marketing</a></h4>
                         <p class="description">Boost your online presence with SEO, Google Ads, Social Media Marketing, and result-driven campaigns.</p>
                     </div>
                 </div>
@@ -456,7 +429,7 @@
                 <div class="service-item d-flex position-relative h-100">
                     <i class="bi bi-cloud-check icon flex-shrink-0"></i>
                     <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">Cloud-Based Solutions</a></h4>
+                        <h4 class="title"><a href="service-details.html?service=cloud" class="stretched-link">Cloud-Based Solutions</a></h4>
                         <p class="description">Secure, scalable, and cost-effective cloud computing services including AWS, Azure, and Google Cloud deployments.</p>
                     </div>
                 </div>
@@ -468,7 +441,7 @@
                 <div class="service-item d-flex position-relative h-100">
                     <i class="bi bi-bug icon flex-shrink-0"></i>
                     <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">QA & Testing</a></h4>
+                        <h4 class="title"><a href="service-details.html?service=qa" class="stretched-link">QA & Testing</a></h4>
                         <p class="description">Comprehensive software testing services to ensure high quality, performance, and bug-free applications.</p>
                     </div>
                 </div>
@@ -480,7 +453,7 @@
                 <div class="service-item d-flex position-relative h-100">
                     <i class="bi bi-mortarboard icon flex-shrink-0"></i>
                     <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">IT Training & Internship</a></h4>
+                        <h4 class="title"><a href="service-details.html?service=training" class="stretched-link">IT Training & Internship</a></h4>
                         <p class="description">Hands-on training and internship programs in trending technologies like .NET, Java, Python, Cloud, and more.</p>
                     </div>
                 </div>
@@ -492,7 +465,7 @@
                 <div class="service-item d-flex position-relative h-100">
                     <i class="bi bi-people icon flex-shrink-0"></i>
                     <div>
-                        <h4 class="title"><a href="service-details.html" class="stretched-link">IT Consulting</a></h4>
+                        <h4 class="title"><a href="service-details.html?service=consulting" class="stretched-link">IT Consulting</a></h4>
                         <p class="description">Expert IT consulting to help startups and companies choose the right technology for growth and digital transformation.</p>
                     </div>
                 </div>
@@ -505,11 +478,6 @@
 
 </section>
 <!-- /Services Section -->
-
-
-
-      
-
 
 
         <!-- Faq Section -->
@@ -652,35 +620,32 @@
 
             <!-- Contact Form -->
             <div class="col-lg-6">
-                <form action="https://themewagon.github.io/Presento/forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-                    <div class="row gy-4">
+            <form action="contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+  <div class="row gy-4">
 
-                        <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                        </div>
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
 
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                        </div>
+    <div class="col-md-6">
+      <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+    </div>
 
-                        <div class="col-md-12">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                        </div>
+    <div class="col-md-12">
+      <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+    </div>
 
-                        <div class="col-md-12">
-                            <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
-                        </div>
+    <div class="col-md-12">
+      <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+    </div>
 
-                        <div class="col-md-12 text-center">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+    <div class="col-md-12 text-center">
+      <button type="submit">Send Message</button>
+    </div>
 
-                            <button type="submit">Send Message</button>
-                        </div>
+  </div>
+</form>
 
-                    </div>
-                </form>
             </div>
             <!-- End Contact Form -->
 
@@ -747,14 +712,12 @@
       <div class="col-lg-3 col-md-4 footer-links">
         <h4>Our Services</h4>
         <ul>
-          <li><a href="service-details.html">Web Development</a></li>
-          <li><a href="service-details.html">Java Development</a></li>
-          <li><a href="service-details.html">Python Development</a></li>
-          <li><a href="service-details.html">Digital Marketing</a></li>
-          <li><a href="service-details.html">Cloud Solutions</a></li>
-          <li><a href="service-details.html">QA & Testing</a></li>
-          <li><a href="service-details.html">IT Consulting</a></li>
-          <li><a href="service-details.html">Support & Maintenance</a></li>
+          <li><a href="service-details.html?service=web">Web Development</a></li>
+          <li><a href="service-details.html?service=marketing">Digital Marketing</a></li>
+          <li><a href="service-details.html?service=cloud">Cloud Solutions</a></li>
+          <li><a href="service-details.html?service=qa">QA & Testing</a></li>
+          <li><a href="service-details.html?service=consulting">IT Consulting</a></li>
+          <li><a href="service-details.html?service=support">Support & Maintenance</a></li>
         </ul>
       </div>
 
