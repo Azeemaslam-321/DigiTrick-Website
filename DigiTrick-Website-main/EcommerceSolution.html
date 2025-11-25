@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-Commerce QA & Testing — Premium</title>
+  <meta name="description" content="E-commerce testing: payment flows, performance, security, mobile & platform testing with QA strategies and automation." />
+
+  <!-- Google Font + FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+    /* ======================================================
+   PREMIUM FULL PAGE CSS  
+   Modern Gradient • Glassmorphism • Animations
+   Cleaned & Corrected Version
+====================================================== */
+
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #eef1f7;
+  color: #0f172a;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Fade Animation */
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- WRAPPER ---------- */
+.wrap { padding: 22px; }
+
+.panel {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(20px);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 18px 46px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.35);
+  animation: fadeUp 0.7s ease-out;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+  align-items: center;
+}
+
+.eyebrow .badge {
+  background: linear-gradient(90deg, #0aa7b8, #6b73ff);
+  color: white;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 50px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  font-size: 38px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #0a3d91, #6b73ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+
+.hero .lead {
+  font-size: 16px;
+  color: #4a5568;
+  max-width: 700px;
+  margin-bottom: 18px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #0aa7b8, #6b73ff);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(107,115,255,0.25);
+}
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(107,115,255,0.35);
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.btn-ghost:hover {
+  background: white;
+  transform: translateY(-4px);
+}
+
+/* ---------- HERO RIGHT BOX ---------- */
+.hero-right {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(14px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 14px 38px rgba(0,0,0,0.06);
+}
+
+/* Meta Info */
+.meta .mrow {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+}
+.meta strong { color: #0f172a; font-size: 15px; }
+.meta small { color: #6b7280; }
+
+/* ---------- SECTION HEAD ---------- */
+.section { margin-top: 40px; }
+
+.section-title {
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #0a3d91, #6b73ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* ---------- SERVICE CARDS ---------- */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 14px 26px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.12);
+}
+
+.service-card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #0aa7b818, #6b73ff1a);
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 20px;
+  color: #0aa7b8;
+}
+
+.service-card h3 {
+  margin: 14px 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* ---------- ICON GRID ---------- */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.icon-box {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 44px rgba(0,0,0,0.10);
+}
+
+.icon-box img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.icon-box p {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+
+/* ==========================
+   2. TECHNOLOGIES WE USE
+========================== */
+.tech-icons {
+    padding: 80px 0;
+    background: #ffffff;
+    border-top: 2px solid #eaeaea;
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 per row */
+    gap: 30px;
+}
+
+.icon-box {
+    background: var(--white);
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+    animation: fadeUp 0.6s ease;
+}
+
+.icon-box:hover {
+    transform: scale(1.07);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+}
+
+.icon-box img {
+    width: 60px;
+    margin-bottom: 12px;
+}
+
+.icon-box p {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+/* ============================
+   CONTACT FORM SECTION
+=============================== */
+
+.contact-form {
+    margin-top: 40px;
+}
+
+.form-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+    animation: fadeUp 0.8s ease-out;
+}
+
+/* Form Labels */
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #d4d7df;
+    font-size: 15px;
+    margin-bottom: 18px;
+    background: #ffffff;
+    transition: 0.25s ease;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus {
+    border-color: #6b73ff;
+    box-shadow: 0 10px 30px rgba(107, 115, 255, 0.12);
+    outline: none;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(90deg, #0aa7b8, #6b73ff);
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 26px rgba(107, 115, 255, 0.25);
+}
+
+/* ============================
+   FOOTER
+=============================== */
+
+.footer {
+    text-align: center;
+    padding: 26px;
+    margin-top: 40px;
+    color: #6b7280;
+    font-size: 15px;
+    background: transparent;
+}
+
+/* Fade Animation (required by form) */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 30px; }
+  .hero-right { margin-top: 20px; }
+ 
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .icons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form-card {
+        width: 90%;
+    }
+
+
+@media (max-width: 600px) {
+    .services-grid,
+    .icons-grid {
+        grid-template-columns: 1fr;
+    }
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-left">
+          <div class="eyebrow"><span class="badge">E-COMMERCE</span>&nbsp;<small style="color:var(--muted)">Industry Solutions • QA & Testing</small></div>
+          <h1>Robust QA for E-Commerce Platforms — Checkout, Performance & Security</h1>
+          <p class="lead">Reduce friction in purchase journeys, protect payments, and make your storefront resilient to seasonal traffic. We test checkout flows, payment integrations, catalog scale, security vectors and mobile commerce experiences.</p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Request Proposal</a>
+            <a class="btn btn-ghost" href="#why"><i class="fa-solid fa-info-circle"></i> Why Choose Us</a>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:800;color:var(--text);font-size:16px">Trusted E-Commerce QA</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">Marketplaces • Retailers • Direct-to-consumer</div>
+            </div>
+            
+          </div>
+
+          <div class="meta">
+            <div class="mrow"><div style="width:10px;height:10px;border-radius:3px;background:var(--accent);margin-top:6px"></div><div><strong style="display:block;color:var(--text)">Payment Flow Testing</strong><small>3-party & gateway checks, refunds, retries</small></div></div>
+            <div class="mrow"><div style="width:10px;height:10px;border-radius:3px;background:var(--accent-2);margin-top:6px"></div><div><strong style="display:block;color:var(--text)">Performance</strong><small>Load, spike & resilience testing</small></div></div>
+            <div class="mrow"><div style="width:10px;height:10px;border-radius:3px;background:#f59e0b;margin-top:6px"></div><div><strong style="display:block;color:var(--text)">Security</strong><small>OWASP checks, PCI awareness</small></div></div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- INTRO / KEY OFFERINGS (first content block) -->
+      <div class="section" id="core-ecom">
+        <div class="section-head">
+          <h2><i class="fa-solid fa-cart-shopping" style="color:var(--accent)"></i> Core E-Commerce Testing</h2>
+        </div>
+
+        <div class="cards" style="margin-top:12px">
+          <div class="service">
+            <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+            <h3>Payment & Checkout Validation</h3>
+            <p>End-to-end checkout verification: multi-gateway flows, 3D Secure, retries, refunds and reconciliation checks that protect revenue and reduce chargebacks.</p>
+            <div class="muted-note">Includes edge cases: network fail, duplicate transactions, partial refunds.</div>
+          </div>
+
+          <div class="service">
+            <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>Mobile Commerce</h3>
+            <p>Mobile web & app testing for responsiveness, touch flows, crash analysis and device compatibility across common screen sizes and OS versions.</p>
+            <div class="muted-note">Gesture checks, deep-link flows, push & session handling.</div>
+          </div>
+
+          <div class="service">
+            <div class="icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Data & Inventory Integrity</h3>
+            <p>Automated checks for product data sync, inventory consistency across services and order lifecycle integrity between UI and backend.</p>
+            <div class="muted-note">Ensures carts, stock and orders remain consistent during peak events.</div>
+          </div>
+
+          <div class="service">
+            <div class="icon"><i class="fa-solid fa-shield"></i></div>
+            <h3>Security & Compliance</h3>
+            <p>OWASP top 10 checks, session management, CSRF/XSS testing and high-level PCI awareness around payment data handling.</p>
+            <div class="muted-note">Vulnerability triage with remediation suggestions.</div>
+          </div>
+        </div>
+      </div>
+
+    <!-- PART 1 END — next message will contain Part 2 (performance, languages/tools icons, and more) -->
+     <!-- ======================= -->
+<!--     LANGUAGES ICONS     -->
+<!-- ======================= -->
+<section class="section">
+  <h2 class="section-title">Technologies & Tools We Work With</h2>
+  <p class="section-sub">Wide range of tools used for delivering high-quality e-commerce solutions.</p>
+
+  <div class="icon-grid">
+
+    <!-- Your Uploaded Icon -->
+ 
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+      <p>React</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
+      <p>Angular</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+      <p>Node.js</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+      <p>Python</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+      <p>Java</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+      <p>PHP</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg">
+      <p>Flutter</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg">
+      <p>Android</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg">
+      <p>iOS</p>
+    </div>
+
+    <div class="icon-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg">
+      <p>Selenium</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =================================== -->
+<!--     E-COMMERCE TESTING SERVICES      -->
+<!-- =================================== -->
+<section class="section">
+  <h2 class="section-title">E-Commerce Testing Services</h2>
+  <p class="section-sub">Complete testing solutions to ensure flawless user experience and secure transactions.</p>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <h3>Functional Testing</h3>
+      <p>Ensuring every flow — login, cart, payment, tracking — works flawlessly.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Performance Testing</h3>
+      <p>Load, stress & scalability checks to handle peak sale traffic.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Security & Pen-Testing</h3>
+      <p>Secure your platform from fraud, data theft & cyber attacks.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Mobile App Testing</h3>
+      <p>Complete testing for Android & iOS shopping apps.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>API Testing</h3>
+      <p>High-coverage testing for cart, payments, orders & inventory APIs.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Checkout & Payment Testing</h3>
+      <p>Validate all payment gateways: UPI, Cards, Wallets, COD, EMI.</p>
+    </div>
+
+  </div>
+</section>
+<!-- ============================
+    PROGRAMMING LANGUAGES ICONS
+============================= -->
+
+
+
+<!-- ============================
+    CONTACT FORM
+============================= -->
+<section class="contact-form">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-sub">Let’s discuss your e-commerce project.</p>
+
+        <form class="form-card">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button class="btn-submit">Submit</button>
+        </form>
+    </div>
+</section>
+  </div> <!-- panel -->
+  </div> <!-- wrap -->
+
+<!-- ============================
+    FOOTER
+============================= -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 DigitricK Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+

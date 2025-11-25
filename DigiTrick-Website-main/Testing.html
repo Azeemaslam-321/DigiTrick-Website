@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Premium QA & Testing</title>
+  <meta name="description" content="Comprehensive QA & Testing services: Manual, Automation, Performance, API, Mobile, Accessibility and platform testing." />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root{
+      --bg:#0f1724;            /* deep navy */
+      --surface:#0e1728;       /* slightly different for cards area */
+      --card:#0b1220;          /* card background */
+      --muted:#9aa4b2;
+      --accent1:#06b6d4;       /* teal/cyan accent */
+      --accent2:#7c5cff;       /* purple accent for gradients */
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      --white: #e9f0f6;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
+      background:linear-gradient(180deg, var(--bg) 0%, #071021 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    /* layout */
+    .wrap{max-width:1200px;margin:48px auto;padding:20px}
+    /* subtle page glass */
+    .panel{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:28px;
+      backdrop-filter: blur(6px) saturate(120%);
+      box-shadow: 0 10px 40px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    /* hero */
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:22px;
+      align-items:center;
+    }
+    .hero-left h1{
+      font-size:36px;
+      letter-spacing:-0.4px;
+      margin-bottom:10px;
+      color:linear-gradient(90deg,var(--white),#d6eaff);
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      color:var(--muted);font-weight:600;font-size:13px;margin-bottom:14px;
+    }
+    .hero-left p.lead{
+      color:var(--muted);
+      max-width:720px;
+      font-size:15px;
+      margin-bottom:18px;
+    }
+    .hero-cta{
+      display:flex;gap:12px;flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:10px 14px;border-radius:10px;
+      font-weight:700;font-size:14px;text-decoration:none;
+      cursor:pointer;
+    }
+    .btn-primary{
+      background: linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#041018;
+      box-shadow:0 8px 30px rgba(12,60,80,0.18);
+      border:none;
+    }
+    .btn-ghost{
+      background:transparent;border:1px solid rgba(255,255,255,0.06);
+      color:var(--white);
+    }
+
+    /* sidebar summary */
+    .hero-right{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03);
+    }
+    .meta-list{display:flex;flex-direction:column;gap:10px}
+    .meta-item{display:flex;align-items:flex-start;gap:12px}
+    .donut{
+      width:46px;height:46px;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      color:#041018;font-weight:800;font-size:16px;
+      box-shadow:0 6px 18px rgba(12,60,80,0.2);
+    }
+    .meta-item small{display:block;color:var(--muted);font-size:13px}
+
+    /* sections */
+    .section{margin-top:28px}
+    .section-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+    .section-head h2{font-size:20px;color:var(--white);font-weight:700}
+    .section-sub{color:var(--muted);font-size:14px}
+
+    /* cards grid */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+    }
+    .service-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+      border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03);
+      transition:transform .28s cubic-bezier(.2,.9,.3,1), box-shadow .28s;
+      display:flex;flex-direction:column;gap:8px;
+    }
+    .service-card:hover{
+      transform:translateY(-8px) scale(1.01);
+      box-shadow: 0 18px 40px rgba(2,6,23,0.6);
+    }
+    .service-card .icon{
+      width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      color:var(--accent1);font-size:18px;
+    }
+    .service-card h3{font-size:16px;color:var(--white);margin-top:6px}
+    .service-card p{color:var(--muted);font-size:14px;flex:1}
+
+    .muted-note{color:var(--muted);font-size:13px;margin-top:8px}
+
+    /* utilities */
+    .split{display:grid;grid-template-columns:1fr 320px;gap:24px}
+    .badge{display:inline-block;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:700;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:960px){
+      .hero{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      .hero-left h1{font-size:26px}
+      .acc-hide-mobile{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-left">
+          <div class="eyebrow"><span class="badge">Services</span><small class="muted-eyebrow">Quality Assurance • Testing</small></div>
+          <h1 style="color:linear-gradient(90deg,var(--white),#d6eaff)">Software Testing & QA Services</h1>
+          <p class="lead" style="margin-bottom:18px">We help teams ship robust, scalable and user-friendly products. From manual QA to enterprise automation — tests that integrate with your delivery pipeline.</p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
+            <a class="btn btn-ghost" href="#why"><i class="fa-solid fa-circle-info"></i> Why choose us</a>
+          </div>
+        </div>
+
+        <aside class="hero-right acc-hide-mobile">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+            <div>
+              <div style="font-weight:800;font-size:16px;color:var(--white)">Trusted by product teams</div>
+              <div class="muted-note">Large enterprises • Startups • SaaS</div>
+            </div>
+            <div class="donut">TS</div>
+          </div>
+
+          <div class="meta-list" style="margin-top:10px">
+            <div class="meta-item">
+              <div style="width:12px;height:12px;border-radius:3px;background:linear-gradient(90deg,var(--accent1),var(--accent2));margin-top:6px"></div>
+              <div>
+                <strong style="color:var(--white);display:block">Core + Automation</strong>
+                <small>Manual, automation & API testing</small>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div style="width:12px;height:12px;border-radius:3px;background:#6ee7b7;margin-top:6px"></div>
+              <div>
+                <strong style="color:var(--white);display:block">Platform Coverage</strong>
+                <small>Mobile, Web, TV, Wearables</small>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div style="width:12px;height:12px;border-radius:3px;background:#ffd166;margin-top:6px"></div>
+              <div>
+                <strong style="color:var(--white);display:block">Dev-friendly</strong>
+                <small>CI/CD, test reports, dashboards</small>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+      </div>
+      <!-- MAIN CONTENT -->
+      <div class="section" id="core">
+        <div class="section-head">
+          <h2><i class="fa-solid fa-shield-halved" style="color:var(--accent1)"></i> Core Testing Services</h2>
+          <div class="section-sub">Manual, functional, usability and UAT — end-to-end coverage.</div>
+        </div>
+
+        <div class="cards" style="margin-top:10px">
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Manual Testing</h3>
+            <p>Complete product validation mapped to requirements — exploratory, ad-hoc, regression and acceptance testing to reduce release-time defects.</p>
+            <div class="muted-note">Early stage QA to catch business-logic issues.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Mobile App Testing</h3>
+            <p>Compatibility, UI, performance & device matrix testing on Android and iOS (real devices + cloud labs).</p>
+            <div class="muted-note">Real device coverage across vendors & OS levels.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>Functional Testing</h3>
+            <p>Business-critical flows validated using test cases, automation readiness checks and sanity suites to prevent regressions.</p>
+            <div class="muted-note">Structured test artifacts and traceability.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-users-gear"></i></div>
+            <h3>User Acceptance (UAT)</h3>
+            <p>Co-ordinated UAT cycles with stakeholders, capturing real user feedback and acceptance criteria confirmation before launch.</p>
+            <div class="muted-note">Alpha/Beta and real-environment verification.</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- AUTOMATION -->
+      <div class="section" id="automation">
+        <div class="section-head">
+          <h2><i class="fa-solid fa-robot" style="color:var(--accent2)"></i> Automation Testing Services</h2>
+          <div class="section-sub">Scale testing with reliable automation frameworks integrated into CI/CD.</div>
+        </div>
+
+        <div class="cards" style="margin-top:10px">
+          <article class="service-card">
+            <div class="icon"><i class="fa-brands fa-selenium" style="color:var(--accent2)"></i></div>
+            <h3>Web Automation</h3>
+            <p>Selenium, Playwright & Cypress based suites for cross-browser stability and regression coverage.</p>
+            <div class="muted-note">Parallel execution, cross-browser, flaky-free practices.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>API Automation</h3>
+            <p>Contract, functional & security checks for APIs; integrated reports and mock / stub support for CI pipelines.</p>
+            <div class="muted-note">Contract testing & schema validation.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-fingerprint"></i></div>
+            <h3>Mobile Automation</h3>
+            <p>Appium + cloud device farms for reliable mobile regression and smoke suites.</p>
+            <div class="muted-note">Device matrix + cloud runs.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>Framework & CI Design</h3>
+            <p>Design maintainable, readable frameworks (hybrid/BDD) with reporting & dashboarding integration.</p>
+            <div class="muted-note">Logs, screenshots & failure triage built-in.</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- EMERGING -->
+      <div class="section" id="emerging">
+        <div class="section-head">
+          <h2><i class="fa-solid fa-puzzle-piece" style="color:#ffa94d"></i> Emerging & Platform Testing</h2>
+          <div class="section-sub">TVs, wearables, streaming platforms — ensure great experience across devices.</div>
+        </div>
+
+        <div class="cards" style="margin-top:10px">
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-watch-smart"></i></div>
+            <h3>Wearable Apps</h3>
+            <p>Fitness, healthcare & wearable UX testing — sensor, battery & connectivity checks.</p>
+            <div class="muted-note">Real-device validation across wearables.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-tv"></i></div>
+            <h3>Smart TV / OTT</h3>
+            <p>Playback, DRM, streaming performance & UI validation on TV platforms (Android TV, FireTV, Apple TV).</p>
+            <div class="muted-note">Playback KPIs and resilience testing.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-video"></i></div>
+            <h3>Video Streaming QA</h3>
+            <p>Adaptive streaming checks, buffering scenarios, ABR & network resilience testing for media apps.</p>
+            <div class="muted-note">Quality across networks & codecs.</div>
+          </article>
+        </div>
+      </div>
+      <!-- INDEPENDENT TESTING -->
+      <div class="section" id="independent">
+        <div class="section-head">
+          <h2><i class="fa-solid fa-diagram-predecessor" style="color:#7dd3fc"></i> Independent Testing Services</h2>
+          <div class="section-sub">For businesses that need impartial QA audits and third-party testing.</div>
+        </div>
+
+        <div class="cards" style="margin-top:10px">
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Web App Testing</h3>
+            <p>End-to-end checks for modern web platforms — flows, security cursory checks & performance smoke tests.</p>
+            <div class="muted-note">From simple sites to enterprise platforms.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3>Cloud Testing</h3>
+            <p>Scalable test execution on cloud infra — ephemeral environments for CI/Cd verification and scalability checks.</p>
+            <div class="muted-note">Cost-effective test runs with repeatability.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-rotate"></i></div>
+            <h3>Regression Testing</h3>
+            <p>Robust regression strategies (automated/manual) ensuring updates don't break existing functionality.</p>
+            <div class="muted-note">Risk-based regression prioritization.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-browser"></i></div>
+            <h3>Cross Browser Testing</h3>
+            <p>Visual & functional parity across browsers, devices and breakpoints.</p>
+            <div class="muted-note">Pixel and behaviour checks.</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- WHY US -->
+      <div class="section" id="why">
+        <div class="section-head">
+          <h2><i class="fa-solid fa-award" style="color:#ffd166"></i> Why choose us</h2>
+          <div class="section-sub">Practical QA, engineering mindset, and delivery-focused testing.</div>
+        </div>
+
+        <div class="cards" style="margin-top:10px">
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h3>Proven Track Record</h3>
+            <p>Multiple product launches supported with measurable quality improvements.</p>
+            <div class="muted-note">Industry-wide experience: BFSI, EdTech, Health, SaaS & more.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Custom Strategy</h3>
+            <p>Each product gets a tailored testing approach — not a one-size-fits-all checklist.</p>
+            <div class="muted-note">Roadmaps, KPIs and deliverables defined upfront.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-flask-vial"></i></div>
+            <h3>Tooling & Automation</h3>
+            <p>We pick proven tools & design maintainable automation to reduce long-term costs.</p>
+            <div class="muted-note">CI/CD friendly and testable architecture suggestions.</div>
+          </article>
+
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <h3>Flexible Engagements</h3>
+            <p>Short audits, dedicated QA teams, or long-term partnerships — you choose the model.</p>
+            <div class="muted-note">Consulting + Execution available.</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="section" id="contact" style="margin-top:28px;text-align:center">
+        <div style="max-width:780px;margin:0 auto">
+          <h2 style="font-size:20px;color:var(--white);margin-bottom:8px"><i class="fa-solid fa-envelope"></i> Get in touch</h2>
+          <p class="section-sub" style="margin-bottom:14px">Share your project brief and we'll reply with a tailored QA roadmap and estimate.</p>
+
+          <a class="btn btn-primary" href="mailto:azeemaslam136@gmail.com"><i class="fa-solid fa-paper-plane"></i> Request a Proposal</a>
+          <!-- <div class="muted-note" style="margin-top:12px">Or call us at <strong>+91 70000 00000</strong> (placeholder)</div> -->
+        </div>
+      </div>
+
+      <footer style="margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--muted)">
+        <div style="max-width:1000px;margin:0 auto;padding:20px 0">
+          © <span id="year"></span> Digitrick Testing Services. All rights reserved.
+        </div>
+      </footer>
+
+    </div> <!-- panel -->
+  </div> <!-- wrap -->
+
+  <script>
+    // small niceties
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
