@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digitrick Consultancy offers IT Training, Internships, Software Development, Website Design, and Digital Marketing solutions to help students and businesses grow." />
+  <meta name="keywords" content="Digitrick Consultancy, IT Training, Internship, Software Development, Digital Marketing, Website Development, Lucknow" />
+  <meta name="author" content="Digitrick Consultancy" />
+  <title>Recruitment | Digitrick Consultancy</title>
+
+  <!-- Favicons (place your images in assets/img/) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap (local copy recommended) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS for simple scroll animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+ /* =========================================================
+   PROFESSIONAL DIGITRICK THEME 2025
+   Clean – Modern – Corporate – Premium UI
+   ========================================================= */
+
+:root {
+  --brand-1: #00e5ff;
+  --brand-2: #0097a7;
+  --text-dark: #1a1f36;
+  --text-muted: #6c7a91;
+  --bg-light: #f4f7fb;
+  --bg-white: #ffffff;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --shadow-soft: 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-medium: 0 6px 28px rgba(0,0,0,0.10);
+  --footer-bg: #0a0f16;
+}
+
+/* Global */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--bg-white);
+  padding: 12px 0;
+  box-shadow: var(--shadow-soft);
+  border-bottom: 1px solid #f1f1f1;
+}
+nav {
+    background: #ffffff !important;
+}
+nav a {
+    color: #111 !important;
+}
+nav a:hover {
+    color: #007bff !important;
+}
+nav ul li a {
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+nav ul li a:hover {
+  background: var(--brand-1);
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+}
+
+.hero h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.badge-reviews {
+  background: var(--brand-1);
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-medium);
+}
+
+/* Cards / Sections */
+.hr-overview {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.hr-overview h3,
+.hr-overview h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Lists */
+.hr-overview ul li {
+  margin-bottom: 10px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Blockquote */
+.hr-overview blockquote {
+  border-left: 4px solid var(--brand-1);
+  border-radius: var(--radius-md);
+  background: #eef9fb;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Footer */
+footer {
+  background: var(--footer-bg);
+  padding: 60px 0;
+  color: #cdd3dd;
+}
+
+footer h5 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #dfe6f1;
+  transition: 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--brand-1);
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+/* Newsletter */
+.newsletter-form input[type="email"] {
+  padding: 10px 14px;
+  border: 1px solid #aaa;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  background: #ffffff;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: var(--brand-1);
+}
+
+.newsletter-form input[type="submit"] {
+  background: var(--brand-1);
+  border-radius: 0 10px 10px 0;
+  padding: 10px 16px;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  transition: 0.25s ease;
+}
+
+.newsletter-form input[type="submit"]:hover {
+  background: var(--brand-2);
+  color: #fff;
+}
+
+/* Social Icons */
+.social-links a {
+  background: rgba(255,255,255,0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--brand-1);
+  color: #000 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <!-- <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <div class="logo-text">
+          <h1 class="sitename" style="margin:0; font-size:22px; color:#000;">Digi<span style="color:var(--brand-1)">Trick</span></h1>
+          <span style="font-size:12px; color:var(--muted)">Consultancy Services</span>
+        </div>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul class="mb-0">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> -->
+
+  <!-- Hero / Intro -->
+  <main class="container hero">
+    <div class="row align-items-center">
+      <div class="col-lg-8" data-aos="fade-up">
+        <h2 class="mb-2">Best HR Consultancy Agency</h2>
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="badge-reviews">★ 5.0</div>
+          <small class="text-muted">based on 101 user reviews</small>
+        </div>
+        <p class="lead text-muted">HR Consultancy in Lucknow NCR — Top HR Consultancy in Lucknow NCR, HR Recruitment Service, Manpower Staffing Service, Best Recruitment Agency.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+        <img src="https://hr-gazette.com/wp-content/uploads/2018/10/bigstock-Recruitment-Concept-Idea-Of-C-250362193.jpg" alt="HR illustration" style="max-width:220px;" />
+      </div>
+    </div>
+
+    <!-- Article / Content -->
+    <section class="mt-4 hr-overview" data-aos="fade-up">
+      <h3>AN OVERVIEW</h3>
+      <p>Human Resources in any company is becoming all the time more imperative day by day. All organizations must have an excellent team of working professionals. For this purpose, HR outsourcing has become a reliable way for organizations to reduce operational costs and focus on the predominant business manoeuvres.</p>
+
+      <p>As the need for HR Consultancy is rising, Digitrick has ushered in Human Resource Consultancy to provide scalable and efficient workforce solutions to various organizations. Our objective is to provide high-impact solutions to boost the efficacy of the organizations and the individuals we assist.</p>
+
+      <p>We put out all the stops to empower organizations to succeed in an intermittent and uncertain professional world. Moreover, we find gratification in connecting job seekers to consequential and steadfast employment opportunities while serving the business requirements of companies.</p>
+
+      <h4 class="mt-4">OUR MODELS</h4>
+      <p>There are predominantly three models, wherein, we provide HR consultancy in Lucknow NCR. These include the <strong>Contract-to-Hire</strong> model, <strong>Client Payroll</strong> model, and <strong>Contract-Only</strong> model.</p>
+
+      <ul class="mt-2">
+        <li><strong>CONTRACT TO HIRE MODEL:</strong> Under this model, we recruit employees on a contract basis for a brief period; say, a month or so, as per the requirement of the company.</li>
+        <li><strong>CLIENT PAYROLL MODEL:</strong> This model permits the hired employees to go directly on the company’s payroll.</li>
+        <li><strong>CONTRACT ONLY MODEL:</strong> As per this model, the contract lasts for one year, hence this contract is for long-term operations.</li>
+      </ul>
+
+      <h4 class="mt-4">WHY CHOOSE Digitrick FOR HR CONSULTANCY?</h4>
+      <p>Some of the major constituents to choose Digitrick for HR Consultancy needs:</p>
+      <ul>
+        <li>Focus on efficacy of employees and quality of service.</li>
+        <li>Reliability, dedication, and time commitment are prioritised.</li>
+        <li>Unique selection process: resume shortlisting and multiple interview stages for precision hiring.</li>
+        <li>Staffing solutions across all organizational levels, including senior management.</li>
+      </ul>
+
+      <h4 class="mt-4">THE SEGMENTS THAT WE SERVE</h4>
+      <p>Our online HR consulting services emphasize the following broadly classified segments:</p>
+      <ul class="hr-segments">
+        <li>Information Technology (IT)</li>
+        <li>Engineering Industries</li>
+        <li>Telecommunications</li>
+        <li>Service Sector</li>
+        <li>Banking and Finance Sector</li>
+      </ul>
+
+      <p>Digitrick can also look into providing HR Recruitment Consultancy in other sectors as well in case there is bulk recruitment or the category falls in our area of consideration.</p>
+
+      <blockquote class="mt-3 p-3" style="background:#f1f5f9; border-left:4px solid var(--brand-1);">
+        <strong>Review (Vivek Jadon)</strong>
+        <p class="mb-0">Good experience and exposure where you are always interacting with people while learning about the company — <small class="text-muted">Saturday, 12 August 2023</small></p>
+      </blockquote>
+
+    </section>
+
+  </main>
+
+  <!-- Footer (adapted from original) -->
+  <footer id="footer" class="footer mt-5">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename" style="color:#fff; font-weight:700">Digi Trick Consultancy</span>
+          </a>
+          <div class="footer-contact pt-3 text-white-50">
+            <p>B-49, Tej Kumar Plaza,</p>
+            <p>Hazratganj, Lucknow. 226001</p>
+            <p><strong>Phone:</strong> <span><a href="tel:+919161236758">+91 91612 36758</a>, <a href="tel:+918112780010">+91 81127 80010</a></span></p>
+                        <p><strong>Email:</strong> <a href="mailto:Info@digitrick.in">Info@digitrick.in</a></p>
+          </div>
+          <div class="social-links d-flex mt-3">
+            <a href="https://x.com/Digi_Trick" class="me-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.instagram.com/digitrickconsultancy/" class="me-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/digi-trick-consultancy" class="me-2"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h5 style="color:#fff">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="termsofservice.html">Terms of Service</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 footer-links">
+          <h5 style="color:#fff">Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="service-details.html?service=web">Web Development</a></li>
+            <li><a href="service-details.html?service=marketing">Digital Marketing</a></li>
+            <li><a href="service-details.html?service=cloud">Cloud Solutions</a></li>
+            <li><a href="service-details.html?service=qa">QA & Testing</a></li>
+            <li><a href="service-details.html?service=consulting">IT Consulting</a></li>
+            <li><a href="service-details.html?service=support">Support & Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-newsletter">
+          <h5 style="color:#fff">Our Newsletter</h5>
+          <p>Subscribe to get the latest updates about our services!</p>
+          <form action="Newsletter.php" method="post" class="php-email-form">
+            <div class="d-flex newsletter-form">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <input type="submit" value="Subscribe">8/
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container text-center mt-4">
+      <p class="mb-1">© <span id="year"></span> <strong class="px-1 sitename">Digi Trick Consultancy</strong>. All Rights Reserved</p>
+      <div class="credits text-white-50">Designed & Developed by <a href="https://digitrick.in/">Digi Trick Consultancy</a></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:700, once:true});
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

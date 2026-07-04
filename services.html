@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Website, App, Software, Digital Marketing & IT Training</title>
+  <meta name="description" content="Explore Digi Trick Consultancy services including website development, app development, software solutions, digital marketing, SEO, IT training and internships in Lucknow.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700;800&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .services-hero {
+      background: linear-gradient(120deg, rgba(10, 229, 233, .16), rgba(255,255,255,.96)), url("assets/img/working-3.jpg") center/cover;
+      padding: 86px 0 68px;
+    }
+    .services-hero h1 { font-size: clamp(34px, 4vw, 54px); font-weight: 800; line-height: 1.12; }
+    .service-pro-card { border: 1px solid #e8eef4; border-radius: 8px; padding: 28px; height: 100%; background: #fff; box-shadow: 0 14px 34px rgba(15,23,42,.06); transition: .25s ease; }
+    .service-pro-card:hover { transform: translateY(-6px); box-shadow: 0 18px 42px rgba(15,23,42,.12); }
+    .service-pro-card i { width: 54px; height: 54px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(10,229,233,.12); color: #0b95a8; font-size: 28px; margin-bottom: 18px; }
+    .service-pro-card h3 { font-size: 21px; font-weight: 800; }
+    .service-pro-card h3 a { color: #111827; }
+    .service-pro-card h3 a:hover { color: #0b95a8; }
+    .service-tag { display: inline-block; font-size: 12px; font-weight: 800; color: #0b95a8; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+    .service-band { background: #f6fbfc; }
+    .service-list { list-style: none; padding-left: 0; }
+    .service-list li { position: relative; padding-left: 30px; margin-bottom: 12px; }
+    .service-list li:before { content: "\F26E"; font-family: "bootstrap-icons"; color: #0b95a8; position: absolute; left: 0; top: 1px; }
+    .service-detail-panel { border: 1px solid #dceef2; border-radius: 8px; padding: 24px; height: 100%; background: #fff; }
+    .service-detail-panel h3 { font-weight: 800; font-size: 20px; }
+    .service-detail-panel .icon { color: #0b95a8; font-size: 28px; margin-bottom: 12px; display: inline-block; }
+    .service-table { border: 1px solid #e1eef2; border-radius: 8px; overflow: hidden; background: #fff; }
+    .service-table .row-line { display: grid; grid-template-columns: 1fr 2fr 1.2fr; gap: 18px; padding: 18px 22px; border-bottom: 1px solid #eaf2f5; align-items: center; }
+    .service-table .row-line:last-child { border-bottom: 0; }
+    .service-table strong { color: #0b7285; }
+    .service-faq-item { border: 1px solid #e1eef2; border-radius: 8px; padding: 22px; height: 100%; background: #fff; }
+    .service-large-panel { border: 1px solid #dceef2; border-radius: 8px; padding: 30px; background: linear-gradient(135deg, #ffffff, #f5fcfd); height: 100%; }
+    .service-large-panel h3 { font-size: 23px; font-weight: 800; margin-bottom: 12px; }
+    .service-large-panel i { color: #0b95a8; font-size: 34px; margin-bottom: 16px; display: inline-block; }
+    .service-mini-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .service-mini-grid span { border: 1px solid #d9eef2; border-radius: 8px; background: #fff; padding: 12px 14px; color: #0b7285; font-weight: 700; }
+    .addon-box { border-left: 4px solid #0AE5E9; padding: 18px 20px; background: #ffffff; box-shadow: 0 12px 28px rgba(15,23,42,.05); height: 100%; }
+    .addon-box h3 { font-size: 19px; font-weight: 800; margin-bottom: 8px; }
+    @media (max-width: 576px) { .service-mini-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .service-table .row-line { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <div class="logo-text">
+          <h1 class="sitename" style="margin:0; font-size:24px; font-weight:800; color:#000;">
+            Digi<span style="color:#0AE5E9;">Trick</span>
+          </h1>
+          <small style="font-size:13px; color:#6c757d;">Consultancy Services</small>
+        </div>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="services-hero">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <span class="service-tag">Digital services in Lucknow and across India</span>
+            <h1>Website, App, Software, Marketing and IT Training Services</h1>
+            <p class="lead mt-3">A complete digital services suite for businesses, institutes, startups and professionals who need reliable execution, clear content, mobile-ready design and SEO-friendly structure.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-primary btn-lg" href="tel:+919161236758"><i class="bi bi-telephone me-2"></i>Call +91 91612 36758</a>
+              <a class="btn btn-outline-dark btn-lg" href="index.html#contact"><i class="bi bi-send me-2"></i>Send Requirement</a>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="120">
+            <div class="service-pro-card">
+              <i class="bi bi-stars"></i>
+              <h3>One team, full stack support</h3>
+              <p>Planning, design, development, SEO, launch support and training guidance aligned to your business goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Core Services</h2>
+        <p>Choose a focused service or combine multiple capabilities into one practical digital roadmap.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-pro-card"><i class="bi bi-laptop"></i><h3><a href="webdevelopment.html">Website Development</a></h3><p>Professional business websites, landing pages, portfolio sites, local SEO pages and web applications that clearly explain your services and convert visitors into enquiries.</p><ul class="service-list"><li>Responsive UI and fast-loading sections</li><li>SEO title, description and heading structure</li><li>Contact, WhatsApp-ready CTA, forms and map sections</li><li>Service pages for city and business keywords</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="service-pro-card"><i class="bi bi-phone"></i><h3><a href="appdevelopment.html">App Development</a></h3><p>Android, iOS and cross-platform app planning for education, e-commerce, bookings, field teams, internal staff and customer engagement workflows.</p><ul class="service-list"><li>Feature planning and user journey mapping</li><li>Mobile UI screens and admin panel planning</li><li>API, dashboard and notification support</li><li>Launch-ready testing and improvement roadmap</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="service-pro-card"><i class="bi bi-code-square"></i><h3><a href="software-development.html">Software Development</a></h3><p>Custom software for teams that want to reduce manual work, organize records and manage business operations from one structured system.</p><ul class="service-list"><li>CRM, leads and follow-up management</li><li>Dashboards, reports and role-based access</li><li>Workflow tools for approvals and tasks</li><li>Data forms, exports and admin controls</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-pro-card"><i class="bi bi-graph-up-arrow"></i><h3><a href="digital-marketing.html">Digital Marketing & SEO</a></h3><p>Marketing support for businesses that need better local visibility, stronger search pages and content that answers real customer questions.</p><ul class="service-list"><li>Local SEO and Google Business Profile support</li><li>Keyword planning for services and cities</li><li>Blog topics, landing pages and internal links</li><li>Lead-generation CTA and campaign pages</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="service-pro-card"><i class="bi bi-mortarboard"></i><h3><a href="Training.html">IT Training & Internship</a></h3><p>Practical IT training and internship guidance designed for students, freshers, working professionals and corporate teams who need real project exposure.</p><ul class="service-list"><li>Web, app, software, QA, cloud and marketing basics</li><li>Live project tasks and portfolio guidance</li><li>Interview preparation and workplace habits</li><li>Online and offline learning options</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="service-pro-card"><i class="bi bi-cpu"></i><h3><a href="ai-automation.html">AI Automation & Chatbot</a></h3><p>Add-on automation for websites, apps and support teams that need faster enquiry handling and fewer repetitive manual replies.</p><ul class="service-list"><li>FAQ chatbot and lead capture flows</li><li>WhatsApp handoff and enquiry routing</li><li>Internal notification and follow-up automation</li><li>Knowledge base planning for support teams</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-pro-card"><i class="bi bi-bag-check"></i><h3><a href="EcommerceSolution.html">E-commerce Solutions</a></h3><p>Online store setup and e-commerce experience planning for product catalogues, service bookings, payment flows and order enquiries.</p><ul class="service-list"><li>Catalogue and category structure</li><li>Checkout and order flow planning</li><li>Product SEO and conversion sections</li><li>Inventory and admin workflow guidance</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="service-pro-card"><i class="bi bi-cloud-check"></i><h3><a href="cloud.html">Cloud Solutions</a></h3><p>Hosting, deployment and cloud planning support for websites, applications and growing software systems that need reliability and scalability.</p><ul class="service-list"><li>Deployment and hosting guidance</li><li>Backup and access planning</li><li>Cloud migration support</li><li>Performance and uptime-focused setup</li></ul></div></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="service-pro-card"><i class="bi bi-bug"></i><h3><a href="Testing.html">QA & Testing</a></h3><p>Quality assurance support before launch so websites, apps and software systems work properly across devices, forms and user journeys.</p><ul class="service-list"><li>Functional and UI testing</li><li>Bug reports and retesting</li><li>Form, CTA and mobile checks</li><li>Release-readiness review</li></ul></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Service Packages Can Include</h2>
+        <p>Depending on your goal, we can combine design, development, SEO, automation, content and training into one clear delivery plan.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up"><div class="service-detail-panel"><span class="icon"><i class="bi bi-file-earmark-text"></i></span><h3>Content & SEO</h3><p>Page copy, service descriptions, city targeting, FAQs, schema basics, sitemap and internal linking.</p></div></div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80"><div class="service-detail-panel"><span class="icon"><i class="bi bi-palette"></i></span><h3>UI & Branding</h3><p>Consistent layouts, professional icons, responsive sections, CTA placement and readable typography.</p></div></div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160"><div class="service-detail-panel"><span class="icon"><i class="bi bi-tools"></i></span><h3>Development</h3><p>HTML/CSS pages, web app modules, admin panels, forms, integrations and production cleanup.</p></div></div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240"><div class="service-detail-panel"><span class="icon"><i class="bi bi-clipboard2-check"></i></span><h3>Launch QA</h3><p>Phone links, forms, mobile views, internal links, metadata, page speed basics and final review.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-band">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="service-tag">Expanded service content</span>
+          <h2>What each service helps you achieve</h2>
+          <p class="mx-auto" style="max-width: 850px;">We do not treat every project as the same template. A website needs trust and enquiry flow. An app needs repeat user convenience. Software needs clean operations. SEO needs useful content and technical structure. Training needs practical exposure.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up"><div class="service-large-panel"><i class="bi bi-window-stack"></i><h3>Website development for business enquiries</h3><p>We build websites that explain your work clearly, guide visitors to the right service and make contact easy. The content can include homepage messaging, about section, detailed service pages, city keyword sections, FAQs, testimonials, contact details, map area, phone links and conversion-focused CTAs.</p><ul class="service-list"><li>Best for local businesses, institutes, agencies, clinics, consultants and service providers.</li><li>Useful when you need Google-ready pages, better trust and more direct calls.</li><li>Can include city pages for Lucknow, Kanpur, Noida, Delhi and other target markets.</li></ul></div></div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80"><div class="service-large-panel"><i class="bi bi-phone"></i><h3>App development for customer and team workflows</h3><p>App development is useful when your users need repeat access, notifications, booking, tracking, learning, ordering or account-based interaction. We plan the screens, user roles, admin panel, content flow, API needs and launch roadmap before development so the app is useful beyond the first version.</p><ul class="service-list"><li>Customer apps for booking, ecommerce, education, service requests and updates.</li><li>Internal apps for field teams, attendance, leads, tasks and reporting.</li><li>Admin panels for managing content, users, orders, enquiries and notifications.</li></ul></div></div>
+          <div class="col-lg-6" data-aos="fade-up"><div class="service-large-panel"><i class="bi bi-code-slash"></i><h3>Software development for organized operations</h3><p>Custom software helps when manual work, spreadsheets, repeated follow-ups or scattered records are slowing the team down. We can plan dashboards, CRM modules, role-based access, reports, task workflows, status tracking, exports and data forms according to the business process.</p><ul class="service-list"><li>Lead management, admission tracking, billing support, inventory views and reporting.</li><li>Role-based dashboards for owners, managers, staff and support teams.</li><li>Automation-ready structure for reminders, notifications and follow-ups.</li></ul></div></div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80"><div class="service-large-panel"><i class="bi bi-megaphone"></i><h3>Digital marketing and SEO for visibility</h3><p>SEO and digital marketing work best when the website has strong content. We help structure service pages, local city content, blog topics, internal links, metadata, Google Business Profile support and landing pages so users and search engines understand what the business offers.</p><ul class="service-list"><li>Local SEO for Lucknow, Kanpur, Noida, Delhi NCR and service-area searches.</li><li>Blog planning for questions customers actually search before contacting you.</li><li>Campaign pages with clear CTA, phone number, form and offer messaging.</li></ul></div></div>
+          <div class="col-lg-6" data-aos="fade-up"><div class="service-large-panel"><i class="bi bi-mortarboard"></i><h3>IT training and internship for practical learning</h3><p>Our training content is focused on real project understanding. Students and professionals can learn how websites, apps, software, testing, cloud basics, SEO and digital marketing connect in actual work. The aim is to build confidence, portfolio quality and interview readiness.</p><ul class="service-list"><li>Project tasks, assignments, portfolio guidance and workplace communication.</li><li>Training support for web development, app basics, software logic, QA and marketing.</li><li>Useful for freshers, students, career switchers and college internship batches.</li></ul></div></div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80"><div class="service-large-panel"><i class="bi bi-robot"></i><h3>AI automation and chatbot as an add-on</h3><p>Automation is useful when the same questions, lead routing, follow-ups or support responses happen again and again. We can plan chatbot flows, FAQ responses, enquiry capture, WhatsApp handoff, notifications and internal follow-up logic based on your actual services.</p><ul class="service-list"><li>Website FAQ chatbot for service questions and lead capture.</li><li>Internal follow-up reminders for enquiry and sales teams.</li><li>Knowledge base planning so replies stay consistent and useful.</li></ul></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-band">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2>How we keep projects production-ready</h2>
+            <ul class="service-list">
+              <li>Clear navigation and mobile responsive layouts.</li>
+              <li>Professional page titles, meta descriptions and service content.</li>
+              <li>Footer, contact details, sitemap, robots and structured data basics.</li>
+              <li>Practical content that explains what the business actually provides.</li>
+              <li>Launch checklist for links, phones, forms, assets and page structure.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="service-pro-card">
+              <i class="bi bi-geo-alt"></i>
+              <h3>City-wise service coverage</h3>
+              <p>We support Lucknow, Kanpur, Prayagraj, Varanasi, Ayodhya, Gorakhpur, Noida, Delhi NCR, Gurgaon, Mumbai, Bangalore, Hyderabad and Pune with useful local content, not thin doorway pages.</p>
+              <a class="btn btn-primary" href="website-development-lucknow.html">View Local SEO Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Detailed Deliverables</h2>
+        <p>Every service can be customized, but this gives you a clear idea of what we can include in a professional delivery.</p>
+      </div>
+      <div class="container">
+        <div class="service-table" data-aos="fade-up">
+          <div class="row-line"><strong>Website Development</strong><span>Homepage, about, services, contact, city SEO pages, FAQ sections, forms, map, speed-friendly sections, responsive layout and metadata.</span><span>Best for business enquiries and local SEO.</span></div>
+          <div class="row-line"><strong>App Development</strong><span>User flow, screen planning, customer app, admin panel, API planning, notification flow, testing and launch roadmap.</span><span>Best for mobile-first customer journeys.</span></div>
+          <div class="row-line"><strong>Software Development</strong><span>CRM, dashboards, user roles, reports, lead tracking, task workflows, exports, searchable records and admin controls.</span><span>Best for internal operations.</span></div>
+          <div class="row-line"><strong>Digital Marketing</strong><span>SEO audit, local keywords, Google Business Profile support, blog structure, landing pages, content plan and conversion CTAs.</span><span>Best for visibility and leads.</span></div>
+          <div class="row-line"><strong>IT Training</strong><span>Course planning, live tasks, project practice, internship guidance, portfolio support and interview preparation basics.</span><span>Best for students and professionals.</span></div>
+          <div class="row-line"><strong>Automation</strong><span>FAQ flows, chatbot planning, lead capture, routing, notifications, follow-up logic and support workflow automation.</span><span>Best for reducing repetitive work.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row gy-4 align-items-start">
+          <div class="col-lg-5" data-aos="fade-right">
+            <span class="service-tag">Add-on services</span>
+            <h2>Extra support that makes the project stronger</h2>
+            <p>Many websites fail because they only have a design and no depth. We can add practical supporting work so the site is more useful for visitors, clearer for Google and easier for the business team to manage.</p>
+            <div class="service-mini-grid">
+              <span>FAQ writing</span><span>Schema basics</span><span>Blog topics</span><span>Landing pages</span><span>City content</span><span>CTA cleanup</span><span>Phone links</span><span>Mobile review</span>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="row gy-4">
+              <div class="col-md-6"><div class="addon-box"><h3>SEO content expansion</h3><p>We add service explanations, customer pain points, city mentions, FAQs, internal links and page sections that make the site stronger for organic search.</p></div></div>
+              <div class="col-md-6"><div class="addon-box"><h3>Conversion improvement</h3><p>We review whether visitors can quickly call, submit a requirement, understand pricing direction, view service details and trust the company.</p></div></div>
+              <div class="col-md-6"><div class="addon-box"><h3>Maintenance support</h3><p>We can update content, add new services, improve pages, fix broken links, add new blogs and keep contact information fresh.</p></div></div>
+              <div class="col-md-6"><div class="addon-box"><h3>Launch cleanup</h3><p>We check titles, descriptions, sitemap, robots, schema, navigation, footer, phone numbers, page links, mobile spacing and production readiness.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-band">
+      <div class="container">
+        <div class="row gy-4 align-items-start">
+          <div class="col-lg-5" data-aos="fade-right">
+            <h2>How we decide the right service plan</h2>
+            <p>Not every business needs everything at once. We first understand whether your immediate need is visibility, lead generation, online credibility, customer convenience, internal process improvement or practical training.</p>
+            <p>After that, we suggest a focused plan. For example, a local business may need website + local SEO first, while an institute may need website + training pages + enquiry automation. A growing team may need custom software before marketing.</p>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="row gy-4">
+              <div class="col-md-6"><div class="service-detail-panel"><span class="icon"><i class="bi bi-bullseye"></i></span><h3>Goal mapping</h3><p>We connect every service to a business goal such as calls, admissions, leads, operations, training or sales.</p></div></div>
+              <div class="col-md-6"><div class="service-detail-panel"><span class="icon"><i class="bi bi-layers"></i></span><h3>Priority roadmap</h3><p>We decide what should launch first, what can wait and what should be improved after user feedback.</p></div></div>
+              <div class="col-md-6"><div class="service-detail-panel"><span class="icon"><i class="bi bi-search-heart"></i></span><h3>SEO readiness</h3><p>We include page titles, descriptions, city keywords, FAQs and useful internal links wherever relevant.</p></div></div>
+              <div class="col-md-6"><div class="service-detail-panel"><span class="icon"><i class="bi bi-phone-vibrate"></i></span><h3>Lead readiness</h3><p>We make sure phone numbers, forms, CTAs, map, email and service enquiry paths are easy to find.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="service-tag">Who we serve</span>
+          <h2>Services for businesses, institutes, startups and growing teams</h2>
+          <p class="mx-auto" style="max-width: 850px;">The same service can look different for different clients. A coaching institute may need admissions pages and course content. A clinic may need trust and appointment enquiries. A startup may need MVP planning. A retail business may need ecommerce and local SEO.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="service-detail-panel"><span class="icon"><i class="bi bi-building"></i></span><h3>Local businesses</h3><p>Business websites, Google-ready service pages, location content, phone CTAs, map sections and local enquiry flows.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="service-detail-panel"><span class="icon"><i class="bi bi-journal-bookmark"></i></span><h3>Institutes</h3><p>Course pages, training content, internship details, admission forms, student FAQs and campaign landing pages.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="service-detail-panel"><span class="icon"><i class="bi bi-lightning-charge"></i></span><h3>Startups</h3><p>MVP websites, app planning, pitch-ready service pages, early software workflows and first-launch SEO structure.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="240"><div class="service-detail-panel"><span class="icon"><i class="bi bi-people"></i></span><h3>Growing teams</h3><p>CRM, dashboards, task systems, automation, reporting tools and internal software for better team coordination.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Service FAQs</h2>
+        <p>Quick answers for clients comparing website, app, software, SEO and training services.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6" data-aos="fade-up"><div class="service-faq-item"><h3>Which service should I start with?</h3><p>If you do not have a strong online presence, start with a professional website and local SEO structure. If your daily work is messy, start with software or automation.</p></div></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="service-faq-item"><h3>Can one project include website, SEO and automation?</h3><p>Yes. We can combine website pages, SEO content, forms, chatbot flow and lead routing into one connected delivery plan.</p></div></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="service-faq-item"><h3>Do you create city-wise pages?</h3><p>Yes, but we avoid thin doorway pages. Each city page should have unique local problems, service details, FAQs and CTA content.</p></div></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="service-faq-item"><h3>Can you improve existing pages?</h3><p>Yes. We can update titles, content, layout, phone links, footer, schema, sitemap, service details and mobile responsiveness.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container text-center" data-aos="zoom-in">
+        <h2>Need help choosing the right service?</h2>
+        <p class="mb-4">Tell us your goal and we will suggest a practical plan for website, app, software, SEO, training or automation.</p>
+        <a class="btn btn-primary btn-lg me-2" href="tel:+919161236758">Call +91 91612 36758</a>
+        <a class="btn btn-outline-primary btn-lg" href="tel:+918112780010">Call +91 81127 80010</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center"><span class="sitename">Digi Trick Consultancy</span></a>
+          <div class="footer-contact pt-3">
+            <p>B-49, Tej Kumar Plaza,</p>
+            <p>Hazratganj, Lucknow. 226001</p>
+            <p><strong>Phone:</strong> <span><a href="tel:+919161236758">+91 91612 36758</a>, <a href="tel:+918112780010">+91 81127 80010</a></span></p>
+            <p><strong>Email:</strong> <span><a href="mailto:Info@digitrick.in">Info@digitrick.in</a></span></p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul><li><a href="index.html#hero">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blogs</a></li></ul>
+        </div>
+        <div class="col-lg-3 col-md-4 footer-links">
+          <h4>Our Services</h4>
+          <ul><li><a href="webdevelopment.html">Web Development</a></li><li><a href="appdevelopment.html">App Development</a></li><li><a href="software-development.html">Software Development</a></li><li><a href="digital-marketing.html">Digital Marketing</a></li></ul>
+        </div>
+        <div class="col-lg-3 col-md-12 footer-newsletter">
+          <h4>Need Consultation?</h4>
+          <p>Get a practical digital roadmap for your business.</p>
+          <a class="btn btn-primary" href="index.html#contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span id="year"></span> <strong class="px-1 sitename">Digi Trick Consultancy</strong>. All Rights Reserved</p>
+      <div class="credits">Designed & Developed by <a href="https://digitrick.in/">Digi Trick Consultancy</a></div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js?v=20260705"></script>
+</body>
+</html>
