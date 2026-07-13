@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digi Trick Consultancy Poster</title>
+  <meta name="description" content="Professional service poster for Digi Trick Consultancy.">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #1b1b1b;
+      --panel: #303030;
+      --cyan: #0AE5E9;
+      --cyan-dark: #0b95a8;
+      --muted: #c7d0d8;
+      --line: rgba(255,255,255,.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      background: #101010;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .actions {
+      width: min(920px, 100%);
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .actions a {
+      border: 1px solid rgba(10,229,233,.4);
+      background: rgba(10,229,233,.13);
+      color: #eaffff;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .actions a:first-child { background: #fff; color: #07323a; border-color: #fff; }
+    .poster {
+      width: min(920px, 100%);
+      aspect-ratio: 1 / 1.414;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 88% 9%, rgba(10,229,233,.18), transparent 27%),
+        radial-gradient(circle at 0% 100%, rgba(10,229,233,.08), transparent 20%),
+        linear-gradient(135deg, #1b1b1b, #202020);
+      border: 1px solid var(--line);
+      box-shadow: 0 30px 90px rgba(0,0,0,.45);
+      padding: clamp(28px, 5vw, 56px);
+    }
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,.055) 1px, transparent 1px);
+      background-size: 52px 52px;
+      pointer-events: none;
+    }
+    .content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; }
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .brand img { width: 74px; height: 74px; object-fit: contain; background: #fff; border-radius: 8px; padding: 6px; }
+    .brand h1 { margin: 0; font-size: clamp(24px, 4vw, 34px); line-height: 1; font-weight: 900; }
+    .brand h1 span { color: var(--cyan); }
+    .brand p { margin: 6px 0 0; color: var(--muted); }
+    .badge {
+      width: fit-content;
+      margin-top: clamp(28px, 5vw, 52px);
+      background: var(--cyan);
+      color: #06272d;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 24px 0 14px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.02;
+      font-weight: 950;
+      max-width: 760px;
+    }
+    h2 span { color: var(--cyan); }
+    .intro {
+      color: #dfe7ee;
+      font-size: clamp(17px, 2vw, 23px);
+      max-width: 770px;
+      line-height: 1.55;
+    }
+    .strip {
+      margin: 30px 0;
+      background: rgba(10,229,233,.13);
+      border: 1px solid rgba(10,229,233,.28);
+      border-radius: 8px;
+      padding: 18px;
+      font-weight: 900;
+      color: #eaffff;
+      font-size: clamp(16px, 2vw, 22px);
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    .card i {
+      width: 44px;
+      height: 44px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 8px;
+      background: rgba(10,229,233,.13);
+      color: var(--cyan);
+      font-size: 23px;
+    }
+    .card h3 { margin: 0 0 5px; font-size: clamp(16px, 2vw, 21px); }
+    .card p { margin: 0; color: var(--muted); line-height: 1.45; font-size: clamp(13px, 1.5vw, 16px); }
+    .cta {
+      margin-top: auto;
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
+      border-radius: 8px;
+      padding: 22px;
+      color: #fff;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 16px;
+      align-items: center;
+    }
+    .cta h3 { margin: 0 0 5px; font-size: clamp(20px, 3vw, 30px); }
+    .cta p { margin: 0; }
+    .contact { font-weight: 900; text-align: right; font-size: clamp(15px, 2vw, 20px); }
+    .contact small { display: block; font-weight: 600; margin-top: 5px; }
+    @media (max-width: 720px) {
+      body { padding: 12px; }
+      .actions { justify-content: stretch; flex-direction: column; }
+      .actions a { text-align: center; }
+      .poster { aspect-ratio: auto; min-height: 1180px; }
+      .grid, .cta { grid-template-columns: 1fr; }
+      .contact { text-align: left; }
+    }
+    @media print {
+      body { padding: 0; background: #fff; }
+      .actions { display: none; }
+      .poster { width: 100vw; min-height: 100vh; box-shadow: none; border: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions">
+    <a href="output/pdf/Digi-Trick-Consultancy-Poster.pdf" download><i class="bi bi-download"></i> Download PDF</a>
+    <a href="javascript:window.print()"><i class="bi bi-printer"></i> Print / Save</a>
+  </div>
+  <main class="poster">
+    <div class="content">
+      <header class="brand">
+        <img src="assets/img/Logo.jpg" alt="Digi Trick Consultancy logo">
+        <div>
+          <h1>Digi<span>Trick</span></h1>
+          <p>Consultancy Services | Lucknow, Uttar Pradesh</p>
+        </div>
+      </header>
+
+      <div class="badge">Digital Services</div>
+      <h2>Build Your Digital Presence <span>Professionally</span></h2>
+      <p class="intro">Website development, app development, software solutions, SEO, digital marketing, IT training and automation services for businesses, institutes, startups and professionals.</p>
+
+      <div class="strip">Website | App | Software | SEO | Training | Cloud | QA | Automation</div>
+
+      <section class="grid">
+        <article class="card"><i class="bi bi-laptop"></i><div><h3>Website Development</h3><p>Business websites, landing pages, city SEO pages and launch support.</p></div></article>
+        <article class="card"><i class="bi bi-phone"></i><div><h3>App Development</h3><p>Android, iOS and cross-platform apps for customers and teams.</p></div></article>
+        <article class="card"><i class="bi bi-code-square"></i><div><h3>Software Development</h3><p>CRM, dashboards, reports, admin panels and workflow tools.</p></div></article>
+        <article class="card"><i class="bi bi-graph-up-arrow"></i><div><h3>SEO & Marketing</h3><p>Local SEO, service content, blogs, landing pages and lead flow.</p></div></article>
+        <article class="card"><i class="bi bi-mortarboard"></i><div><h3>IT Training</h3><p>Practical training, internship guidance and live project exposure.</p></div></article>
+        <article class="card"><i class="bi bi-cpu"></i><div><h3>Automation & QA</h3><p>Chatbots, enquiry handoff, launch testing and support workflows.</p></div></article>
+      </section>
+
+      <section class="cta">
+        <div>
+          <h3>Ready to discuss your project?</h3>
+          <p>Contact Digi Trick Consultancy for a practical digital roadmap.</p>
+        </div>
+        <div class="contact">
+          Contact Digi Trick Consultancy
+          <small>B-49, Tej Kumar Plaza, Hazratganj, Lucknow. 226001</small>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
+
+

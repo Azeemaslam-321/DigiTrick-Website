@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digi Trick Consultancy Brochure | Website, App, Software, SEO & IT Training</title>
+  <meta name="description" content="Client brochure for Digi Trick Consultancy services including website development, app development, software, digital marketing, SEO, IT training, cloud, QA and automation.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #1b1b1b;
+      --panel: #2f2f2f;
+      --panel-soft: #353535;
+      --cyan: #0AE5E9;
+      --cyan-dark: #0b95a8;
+      --text: #e8eef3;
+      --muted: #b7c2cc;
+      --line: rgba(255, 255, 255, .1);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .brochure-shell { max-width: 1180px; margin: 0 auto; padding: 22px; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 0 28px;
+    }
+
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand img { width: 58px; height: 58px; object-fit: contain; border-radius: 8px; background: #fff; padding: 5px; }
+    .brand h1 { font-size: 26px; line-height: 1; margin: 0; font-weight: 900; color: #fff; }
+    .brand h1 span { color: var(--cyan); }
+    .brand p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+
+    .top-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+    .btn-brochure {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      border: 1px solid rgba(10, 229, 233, .4);
+      background: rgba(10, 229, 233, .12);
+      color: #eaffff;
+      font-weight: 800;
+      padding: 10px 14px;
+      transition: .22s ease;
+    }
+    .btn-brochure:hover { transform: translateY(-2px); background: var(--cyan); color: #06272d; }
+    .btn-light-print { background: #fff; color: #07323a; border-color: #fff; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      min-height: 500px;
+      padding: 56px;
+      background:
+        linear-gradient(105deg, rgba(27, 27, 27, .95) 0%, rgba(27, 27, 27, .82) 52%, rgba(27, 27, 27, .28) 100%),
+        url("assets/img/working-3.jpg") center/cover;
+      border: 1px solid var(--line);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, .35);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #dffcff;
+      border: 1px solid rgba(10, 229, 233, .36);
+      background: rgba(10, 229, 233, .12);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero h2 {
+      max-width: 760px;
+      font-size: clamp(36px, 5vw, 66px);
+      line-height: 1.05;
+      font-weight: 900;
+      margin: 0 0 20px;
+      color: #fff;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #dce5ec;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 38px;
+      max-width: 850px;
+    }
+
+    .metric {
+      background: rgba(47, 47, 47, .86);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .metric strong { display: block; font-size: 28px; color: var(--cyan); line-height: 1; }
+    .metric span { color: var(--muted); font-size: 13px; }
+
+    .section { padding: 58px 0 0; }
+    .section-head { max-width: 820px; margin-bottom: 28px; }
+    .section-head h2 { font-size: clamp(28px, 3vw, 42px); line-height: 1.15; font-weight: 900; margin: 0 0 10px; color: #fff; }
+    .section-head p { color: var(--muted); margin: 0; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .cardx {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      min-height: 100%;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, .22);
+      transition: .24s ease;
+    }
+    .cardx:hover { transform: translateY(-5px); border-color: rgba(10, 229, 233, .55); }
+    .cardx i {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: rgba(10, 229, 233, .13);
+      color: var(--cyan);
+      font-size: 25px;
+      margin-bottom: 14px;
+    }
+    .cardx h3 { font-size: 20px; font-weight: 900; color: #fff; margin-bottom: 9px; }
+    .cardx p { color: #d6dee6; margin: 0; }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+    .panel {
+      background: linear-gradient(135deg, var(--panel), #252525);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+      min-height: 100%;
+    }
+    .panel h3 { color: #fff; font-weight: 900; margin-bottom: 16px; }
+    .list-clean { list-style: none; padding: 0; margin: 0; }
+    .list-clean li {
+      position: relative;
+      padding-left: 30px;
+      color: #d6dee6;
+      margin-bottom: 12px;
+    }
+    .list-clean li::before {
+      content: "\F26E";
+      font-family: "bootstrap-icons";
+      color: var(--cyan);
+      position: absolute;
+      left: 0;
+      top: 1px;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      counter-reset: step;
+    }
+    .step { position: relative; padding-top: 74px; }
+    .step::before {
+      counter-increment: step;
+      content: counter(step, decimal-leading-zero);
+      position: absolute;
+      top: 22px;
+      left: 24px;
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
+      color: #06272d;
+      font-weight: 900;
+    }
+
+    .cities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .cities span {
+      border: 1px solid rgba(10, 229, 233, .3);
+      background: var(--panel-soft);
+      color: #eaffff;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .cta {
+      margin-top: 58px;
+      background: linear-gradient(135deg, #0bbdd3, #087f95);
+      border-radius: 8px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      align-items: center;
+    }
+    .cta h2 { margin: 0 0 8px; color: #fff; font-weight: 900; }
+    .cta p { color: #f0ffff; margin: 0; }
+    .contact-stack { display: grid; gap: 10px; justify-items: end; }
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(255, 255, 255, .95);
+      color: #06333c;
+      border-radius: 8px;
+      padding: 11px 14px;
+      font-weight: 900;
+    }
+
+    .footer-note {
+      color: var(--muted);
+      text-align: center;
+      padding: 28px 0 10px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 920px) {
+      .topbar, .split, .cta { grid-template-columns: 1fr; display: grid; }
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .process, .hero-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-stack { justify-items: start; }
+      .hero { padding: 36px; }
+    }
+
+    @media (max-width: 620px) {
+      .brochure-shell { padding: 14px; }
+      .topbar { display: block; }
+      .top-actions { justify-content: flex-start; margin-top: 16px; }
+      .cards, .process, .hero-grid { grid-template-columns: 1fr; }
+      .hero { padding: 26px; min-height: auto; }
+      .brand h1 { font-size: 22px; }
+      .btn-brochure, .contact-pill { width: 100%; justify-content: center; }
+    }
+
+    @media print {
+      body { background: #ffffff; color: #111827; }
+      .brochure-shell { max-width: none; padding: 0; }
+      .top-actions { display: none; }
+      .hero, .cardx, .panel, .cta, .metric {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .hero { min-height: auto; }
+      .section { padding-top: 34px; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <div class="brochure-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/Logo.jpg" alt="Digi Trick Consultancy logo">
+        <div>
+          <h1>Digi<span>Trick</span></h1>
+          <p>Consultancy Services | Lucknow, Uttar Pradesh</p>
+        </div>
+      </a>
+      <div class="top-actions">
+        <a class="btn-brochure btn-light-print" href="output/pdf/Digi-Trick-Consultancy-Brochure.pdf" download><i class="bi bi-download"></i>Download PDF</a>
+        <a class="btn-brochure btn-light-print" href="javascript:window.print()"><i class="bi bi-printer"></i>Save as PDF</a>
+        <a class="btn-brochure" href="index.html#contact" target="_blank"><i class="bi bi-send"></i>Send Enquiry</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <span class="kicker"><i class="bi bi-stars"></i> Company Brochure</span>
+        <h2>Website, App, Software Development & IT Training Company in Lucknow</h2>
+        <p>Digi Trick Consultancy helps businesses, institutes, startups and professionals build a stronger digital presence with website development, mobile app development, software solutions, SEO, digital marketing, IT training, cloud, QA and automation support.</p>
+        <div class="top-actions">
+          <a class="btn-brochure btn-light-print" href="index.html#contact">Send Enquiry</a>
+          <a class="btn-brochure" href="index.html#contact">Send Enquiry</a>
+        </div>
+        <div class="hero-grid">
+          <div class="metric"><strong>360°</strong><span>Digital service support</span></div>
+          <div class="metric"><strong>SEO</strong><span>Ready page structure</span></div>
+          <div class="metric"><strong>Mobile</strong><span>Responsive delivery</span></div>
+          <div class="metric"><strong>India</strong><span>Multi-city support</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Our Core Services</h2>
+          <p>Professional services for businesses that need clear communication, useful technology and better enquiry flow.</p>
+        </div>
+        <div class="cards">
+          <article class="cardx"><i class="bi bi-laptop"></i><h3>Website Development</h3><p>Responsive business websites, landing pages, service pages, local SEO pages, contact forms, maps, FAQs and launch-ready structure.</p></article>
+          <article class="cardx"><i class="bi bi-phone"></i><h3>App Development</h3><p>Android, iOS and cross-platform apps for bookings, education, e-commerce, field teams, customer support and internal workflows.</p></article>
+          <article class="cardx"><i class="bi bi-code-square"></i><h3>Software Development</h3><p>CRM tools, dashboards, reporting systems, admin panels, lead tracking, role-based access and business workflow automation.</p></article>
+          <article class="cardx"><i class="bi bi-graph-up-arrow"></i><h3>Digital Marketing & SEO</h3><p>Local SEO, service content, city pages, Google Business Profile direction, blog planning, landing pages and campaign support.</p></article>
+          <article class="cardx"><i class="bi bi-mortarboard"></i><h3>IT Training & Internship</h3><p>Practical training for students, freshers and professionals with live project exposure, portfolio guidance and interview preparation.</p></article>
+          <article class="cardx"><i class="bi bi-cpu"></i><h3>AI Automation & Chatbot</h3><p>FAQ chatbots, enquiry capture, enquiry handoff, lead routing, internal notifications and simple workflow automation.</p></article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="panel">
+          <h3>Why clients choose Digi Trick Consultancy</h3>
+          <ul class="list-clean">
+            <li>Complete website, app, software, marketing, SEO and training support from one team.</li>
+            <li>Professional content written around real services, city intent and customer questions.</li>
+            <li>Mobile responsive layouts with clear CTA, enquiry detail, form and map visibility.</li>
+            <li>Production-ready basics: metadata, sitemap, robots, schema direction, footer and launch QA.</li>
+            <li>Practical execution for local businesses, institutes, service providers and growing teams.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Industries we support</h3>
+          <ul class="list-clean">
+            <li>Coaching institutes and training centers</li>
+            <li>Clinics, consultants and professional services</li>
+            <li>Retail, e-commerce and local stores</li>
+            <li>Startups, agencies and B2B teams</li>
+            <li>Field service, HR, real estate and operations teams</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Our Work Process</h2>
+          <p>A structured process keeps the project clear, professional and ready for production use.</p>
+        </div>
+        <div class="process">
+          <article class="cardx step"><h3>Requirement</h3><p>We understand your business, audience, services, location, goals and current digital gaps.</p></article>
+          <article class="cardx step"><h3>Planning</h3><p>We plan pages, sections, content, SEO keywords, CTA flow, modules and launch priorities.</p></article>
+          <article class="cardx step"><h3>Execution</h3><p>We design, develop, write content, add service depth, improve navigation and build responsive pages.</p></article>
+          <article class="cardx step"><h3>Launch</h3><p>We check links, enquiry details, forms, mobile view, sitemap, robots, footer, schema basics and final handover.</p></article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="panel">
+          <h3>Cities We Serve</h3>
+          <p style="color: var(--muted); margin-top: 0;">We create useful city-wise content and service pages without thin doorway pages.</p>
+          <div class="cities">
+            <span>Lucknow</span><span>Kanpur</span><span>Prayagraj</span><span>Varanasi</span><span>Ayodhya</span><span>Gorakhpur</span><span>Noida</span><span>Delhi NCR</span><span>Gurgaon</span><span>Mumbai</span><span>Bangalore</span><span>Hyderabad</span><span>Pune</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Contact Details</h3>
+          <ul class="list-clean">
+            <li>B-49, Tej Kumar Plaza, Hazratganj, Lucknow. 226001</li>
+            <li><a href="index.html#contact">Send Enquiry</a></li>
+            <li><a href="index.html#contact">Send Enquiry</a></li>
+            <li><a href="mailto:Info@digitrick.in">Info@digitrick.in</a></li>
+            <li><a href="https://digitrick.in/">digitrick.in</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div>
+          <h2>Ready to build a better digital presence?</h2>
+          <p>Share your requirement for website, app, software, SEO, training or automation. We will suggest a practical plan.</p>
+        </div>
+        <div class="contact-stack">
+          <a class="contact-pill" href="index.html#contact">Send Enquiry</a>
+          <a class="contact-pill" href="index.html#contact" target="_blank"><i class="bi bi-send"></i>Send Enquiry</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-note">
+      Digi Trick Consultancy | Website, App, Software Development, Digital Marketing, SEO, IT Training, Cloud, QA and Automation Services
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+

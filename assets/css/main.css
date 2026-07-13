@@ -1434,6 +1434,32 @@ section,
   }
 }
 
+.city-seo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid color-mix(in srgb, var(--accent-color), #087f95 22%);
+  border-radius: 8px;
+  background: #ffffff;
+  color: #087f95;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(8, 127, 149, .06);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease, color .22s ease;
+}
+
+.city-seo-link:hover,
+.city-seo-link:focus {
+  background: linear-gradient(135deg, var(--accent-color), #0bbdd3);
+  border-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(10, 229, 233, .2);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 575px) {
   .services.dt-services-pro .pro-service-card {
     padding: 22px;
@@ -2861,4 +2887,57 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+.btn-primary,
+.btn-primary:focus {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: var(--accent-color);
+  --bs-btn-border-color: var(--accent-color);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #0bbdd3;
+  --bs-btn-hover-border-color: #0bbdd3;
+  --bs-btn-focus-shadow-rgb: 10, 229, 233;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #087f95;
+  --bs-btn-active-border-color: #087f95;
+  background: linear-gradient(135deg, var(--accent-color), #0bbdd3);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 28px rgba(10, 229, 233, .22);
+}
+
+.btn-primary:hover,
+.btn-primary:focus:hover {
+  background: linear-gradient(135deg, #0bbdd3, #087f95);
+  border-color: #0bbdd3;
+  box-shadow: 0 16px 34px rgba(10, 229, 233, .28);
+  transform: translateY(-1px);
+}
+
+.btn-outline-primary,
+.btn-outline-primary:focus {
+  --bs-btn-color: #087f95;
+  --bs-btn-border-color: color-mix(in srgb, var(--accent-color), #087f95 18%);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--accent-color);
+  --bs-btn-hover-border-color: var(--accent-color);
+  --bs-btn-focus-shadow-rgb: 10, 229, 233;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #087f95;
+  --bs-btn-active-border-color: #087f95;
+  color: #087f95;
+  border-color: color-mix(in srgb, var(--accent-color), #087f95 18%);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent-color), #0bbdd3);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 28px rgba(10, 229, 233, .18);
+}
+
+.btn-light,
+.btn-light:focus {
+  color: #087f95;
 }
